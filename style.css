@@ -2548,12 +2548,12 @@ a.contact-item-value:hover { color: var(--or); }
   width: auto;
   max-width: 130px;
   object-fit: contain;
-  filter: grayscale(100%) brightness(0.85) contrast(1.1);
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.22));
   transition: filter 0.5s ease, transform 0.4s ease;
 }
 
 .logo-item:hover img {
-  filter: grayscale(0%) brightness(1) contrast(1);
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.28));
   transform: scale(1.06);
 }
 
