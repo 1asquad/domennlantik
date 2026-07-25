@@ -51,8 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
     "Le Domaine": "The Estate",
     "Nos Offres": "Our Offers",
     "Notre Vision": "Our Vision",
+    "Actualités": "News",
     "Nous Contacter": "Contact Us",
     "Domaine": "Estate",
+    "Offres": "Offers",
     "Vision": "Vision",
     "Contact": "Contact",
     "Accès rapides": "Quick links",
@@ -409,6 +411,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
     update();
   });
+
+  /* --- Resource modal --- */
+  const resourceModal = document.getElementById('resourceModal');
+  const resourceTitle = document.getElementById('resourceModalTitle');
+  const resourceSource = document.getElementById('resourceModalSource');
+  const resourceBody = document.getElementById('resourceModalBody');
+  const resourceLink = document.getElementById('resourceModalLink');
+  const resourceImage = document.getElementById('resourceModalImage');
+  const resourceCards = document.querySelectorAll('.resource-card');
+
+  if (resourceModal && resourceTitle && resourceSource && resourceBody && resourceLink && resourceCards.length) {
+    let lastResourceTrigger = null;
+
+    const closeResourceModal = () => {
+      resourceModal.classList.remove('active');
+      resourceModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      lastResourceTrigger?.focus();
+    };
+
+    const openResourceModal = (card) => {
+      lastResourceTrigger = card;
+      resourceTitle.textContent = card.dataset.resourceTitle || '';
+      resourceSource.textContent = card.dataset.resourceSource || '';
+      resourceBody.textContent = card.dataset.resourceBody || '';
+      resourceLink.href = card.dataset.resourceLink || '#';
+      resourceLink.textContent = card.dataset.resourceLabel || 'Ouvrir la ressource';
+      if (resourceImage) {
+        const image = card.dataset.resourceImage || '';
+        resourceImage.style.setProperty('--resource-modal-image', image ? `url('${image}')` : '');
+      }
+      resourceModal.classList.add('active');
+      resourceModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      resourceLink.focus();
+    };
+
+    resourceCards.forEach(card => {
+      card.addEventListener('click', () => openResourceModal(card));
+    });
+
+    resourceModal.querySelectorAll('[data-modal-close]').forEach(close => {
+      close.addEventListener('click', closeResourceModal);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && resourceModal.classList.contains('active')) {
+        closeResourceModal();
+      }
+    });
+  }
 
   /* --- Interactive domaine selector --- */
   const preview = document.getElementById('domainePreview');

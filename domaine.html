@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Découvrez le domaine Domenn Lantik au Vauclin : la source, la chapelle, les ruines familiales, le sous-bois, le zamana et la pépinière.">
   <title>Le Domaine · DOMENN LANTIK</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260725-songhai">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='28' font-size='28'%3E🌿%3C/text%3E%3C/svg%3E">
 </head>
 <body>
@@ -21,9 +21,10 @@
       <nav>
         <ul class="nav-list">
           <li><a href="index.html" class="nav-link">Accueil</a></li>
-          <li><a href="domaine.html" class="nav-link">Le Domaine</a></li>
-          <li><a href="offres.html" class="nav-link">Nos Offres</a></li>
-          <li><a href="vision.html" class="nav-link">Notre Vision</a></li>
+          <li><a href="domaine.html" class="nav-link">Domaine</a></li>
+          <li><a href="offres.html" class="nav-link">Offres</a></li>
+          <li><a href="vision.html" class="nav-link">Vision</a></li>
+          <li><a href="actualites.html" class="nav-link">Actualités</a></li>
           <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
         </ul>
       </nav>
@@ -36,6 +37,7 @@
     <a href="domaine.html" class="nav-link">Le Domaine</a>
     <a href="offres.html" class="nav-link">Nos Offres</a>
     <a href="vision.html" class="nav-link">Notre Vision</a>
+    <a href="actualites.html" class="nav-link">Actualités</a>
     <div class="gold-line-long"></div>
     <a href="contact.html" class="btn btn-primary">Nous Contacter</a>
     <div class="footer-social" style="justify-content:center;margin-top:1.5rem;">
@@ -44,137 +46,89 @@
     </div>  </div>
 
   <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Le Domaine</span></div>
-        <h1>Le Domaine</h1>
+    <section class="domaine-stories">
+      <div class="domaine-paper">
+        <div class="stories-title reveal">
+          <span>Le Domaine</span>
+          <h1>Les histoires<br>du vivant</h1>
+        </div>
+
+        <article class="story-row story-row-right reveal">
+          <figure class="story-photo story-photo-a">
+            <img src="images/source.jpg" alt="La source naturelle du domaine Domenn Lantik" loading="lazy">
+          </figure>
+          <div class="story-copy">
+            <span class="story-kicker">Première halte · eau vive</span>
+            <h2>La Source</h2>
+            <p>La visite commence par l'eau. Au cœur du domaine, la source rappelle que tout projet vivant part d'un équilibre simple : nourrir la terre, rafraîchir les cultures et accueillir celles et ceux qui arrivent.</p>
+          </div>
+        </article>
+
+        <article class="story-row story-row-left reveal">
+          <div class="story-copy">
+            <span class="story-kicker">Puis vient le silence</span>
+            <h2>La Chapelle</h2>
+            <p>En avançant, le domaine laisse place au recueillement. La chapelle n'impose rien : elle offre un abri calme, ouvert à toutes les croyances, pour reprendre souffle au milieu du vivant.</p>
+          </div>
+          <figure class="story-photo story-photo-b">
+            <img src="images/chapelle.png" alt="La chapelle du domaine Domenn Lantik" loading="lazy">
+          </figure>
+        </article>
+
+        <article class="story-row story-row-right reveal">
+          <figure class="story-photo story-photo-c">
+            <img src="images/ruine.png" alt="Les ruines familiales du domaine" loading="lazy">
+          </figure>
+          <div class="story-copy">
+            <span class="story-kicker">La mémoire affleure</span>
+            <h2>Ruines familiales</h2>
+            <p>Plus loin, les ruines familiales apparaissent comme des fragments de récit. Ces pierres gardent la trace des générations passées et donnent au projet sa profondeur : ici, on ne construit pas sur un vide.</p>
+          </div>
+        </article>
+
+        <article class="story-row story-row-left reveal">
+          <div class="story-copy">
+            <span class="story-kicker">Le chemin s'épaissit</span>
+            <h2>La forêt préservée</h2>
+            <p>Le parcours se poursuit dans le sous-bois. La lumière change, les sons se rapprochent, la biodiversité devient sensible. C'est l'espace des marches lentes, de l'observation et du ressourcement.</p>
+          </div>
+          <figure class="story-photo story-photo-d">
+            <img src="images/sousbois.png" alt="Le sous-bois préservé de Domenn Lantik" loading="lazy">
+          </figure>
+        </article>
+
+        <article class="story-row story-row-right reveal">
+          <figure class="story-photo story-photo-e">
+            <img src="images/zanama.jpg" alt="Un zamana du domaine Domenn Lantik" loading="lazy">
+          </figure>
+          <div class="story-copy">
+            <span class="story-kicker">Sous l'arbre gardien</span>
+            <h2>Le Zamana</h2>
+            <p>Le zamana marque une pause. Son ombre généreuse rassemble, protège et invite à transmettre. Dans le domaine, l'arbre n'est pas un décor : il devient un repère, presque un personnage.</p>
+          </div>
+        </article>
+
+        <article class="story-row story-row-left reveal">
+          <div class="story-copy">
+            <span class="story-kicker">Et la terre reprend</span>
+            <h2>La Pépinière</h2>
+            <p>La découverte se termine là où le futur commence : dans la pépinière. Plants locaux, variétés anciennes et semences y prennent racine pour nourrir une agriculture plus autonome.</p>
+          </div>
+          <figure class="story-photo story-photo-f">
+            <img src="images/pepi.png" alt="La pépinière du domaine Domenn Lantik" loading="lazy">
+          </figure>
+        </article>
       </div>
     </section>
 
-    <!-- ═══════════ DOMAINE INTERACTIVE — 21st.dev inspired ═══════════ -->
-    <section class="section domaine-interactive">
-      <div class="container">
-        <div class="domaine-grid">
-          <!-- Left: sticky preview -->
-          <div class="domaine-preview reveal">
-            <img src="images/source.jpg" alt="Aperçu du domaine" class="domaine-preview-img" id="domainePreview">
-            <div class="domaine-preview-overlay"></div>
-            <span class="domaine-preview-label" id="domaineLabel">La Source</span>
-            <div class="domaine-preview-badge">
-              <span class="badge-dot"></span> 14.5° N · 60.8° W
-            </div>
-          </div>
-
-          <!-- Right: interactive selector -->
-          <div class="domaine-selector">
-            <div class="domaine-header reveal">
-              <span class="section-eyebrow">Le Vauclin · Martinique</span>
-              <h2 style="color:#fff;">Explorez<br><span style="color:var(--or);">le Domaine</span></h2>
-              <div class="gold-line" style="margin-left:0;"></div>
-              <p style="color:rgba(255,255,255,0.4);font-weight:300;font-size:0.95rem;line-height:1.7;margin-top:1.5rem;">
-                Niché au Vauclin, le domaine Domenn Lantik est un écrin de biodiversité où se mêlent histoire familiale, spiritualité et engagement écologique.
-              </p>
-            </div>
-
-            <div class="selector-list reveal">
-              <button class="selector-item active" data-img="images/source.jpg" data-name="La Source" data-desc="Eau vive jaillissant au cœur du domaine. Elle abreuve les cultures et offre un point d'eau naturel aux visiteurs.">
-                <span class="selector-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></span>
-                <span class="selector-content">
-                  <span class="selector-title">La Source</span>
-                  <span class="selector-desc">Eau vive, source de vie et de régénération</span>
-                </span>
-              </button>
-
-              <button class="selector-item" data-img="images/chapelle.png" data-name="La Chapelle" data-desc="Lieu de recueillement et de connexion spirituelle, ouvert à toutes les croyances dans le respect de la nature environnante.">
-                <span class="selector-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg></span>
-                <span class="selector-content">
-                  <span class="selector-title">La Chapelle</span>
-                  <span class="selector-desc">Recueillement et connexion spirituelle</span>
-                </span>
-              </button>
-
-              <button class="selector-item" data-img="images/ruine.png" data-name="Ruines Familiales" data-desc="Mémoire vivante des générations passées. Ces pierres racontent l'histoire d'une famille et d'un territoire.">
-                <span class="selector-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M17 2H7v5h10z"/><path d="M10 12v4M14 12v4"/></svg></span>
-                <span class="selector-content">
-                  <span class="selector-title">Ruines Familiales</span>
-                  <span class="selector-desc">Mémoire des générations passées</span>
-                </span>
-              </button>
-
-              <button class="selector-item" data-img="images/sousbois.png" data-name="Le Sous-Bois" data-desc="Écrin de verdure et de biodiversité où la faune et la flore caribéennes s'épanouissent en toute liberté.">
-                <span class="selector-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg></span>
-                <span class="selector-content">
-                  <span class="selector-title">Le Sous-Bois</span>
-                  <span class="selector-desc">Biodiversité caribéenne préservée</span>
-                </span>
-              </button>
-
-              <button class="selector-item" data-img="images/zanama.jpg" data-name="Le Zamana" data-desc="Arbre emblématique de la Caraïbe. Son ombre généreuse accueille les moments de repos et de contemplation.">
-                <span class="selector-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/></svg></span>
-                <span class="selector-content">
-                  <span class="selector-title">Le Zamana</span>
-                  <span class="selector-desc">Arbre centenaire, ombre généreuse</span>
-                </span>
-              </button>
-
-              <button class="selector-item" data-img="images/pepi.png" data-name="La Pépinière" data-desc="Berceau de la biodiversité locale. Plants, variétés anciennes et semences au service de la souveraineté alimentaire.">
-                <span class="selector-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
-                <span class="selector-content">
-                  <span class="selector-title">La Pépinière</span>
-                  <span class="selector-desc">Plants et semences pour la souveraineté</span>
-                </span>
-              </button>
-            </div>
-
-            <!-- Description panel -->
-            <div class="domaine-detail" id="domaineDetail">
-              <p>Eau vive jaillissant au cœur du domaine. Elle abreuve les cultures et offre un point d'eau naturel aux visiteurs.</p>
-            </div>
-          </div>
+    <section class="bottom-cta">
+      <div class="container bottom-cta-inner reveal">
+        <div class="bottom-cta-copy">
+          <span class="section-eyebrow">Vous souhaitez visiter ?</span>
+          <h2>Venez découvrir<br><span>le domaine</span></h2>
+          <p>Contactez-nous pour organiser une visite ou un événement dans ce cadre unique.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- ═══════════ INFOS CLÉS ═══════════ -->
-    <section class="section" style="background:var(--earth-50);">
-      <div class="container">
-        <div class="section-header-left reveal" style="position:relative;">
-          <span class="section-eyebrow">Le Domaine en Chiffres</span>
-          <h2>Un Écrin<br><span style="color:var(--or);">de Nature</span></h2>
-          <div class="gold-line"></div>
-        </div>
-
-        <div class="reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;">
-          <div class="card">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <h3>Le Vauclin</h3>
-            <p>Situé sur la côte atlantique de la Martinique, entre mer et mornes, le domaine bénéficie d'un microclimat exceptionnel propice à une biodiversité rare.</p>
-          </div>
-          <div class="card delay-1">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-            <h3>4 Hectares</h3>
-            <p>Un espace généreux où se côtoient zones cultivées, espaces de méditation, sous-bois de zamanas centenaires et lieux de vie.</p>
-          </div>
-          <div class="card delay-2">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-            <h3>Exploitable</h3>
-            <p>Le site est d'ores et déjà accessible pour l'accueil de groupes, les visites et l'organisation d'événements.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════ CTA ═══════════ -->
-    <section class="section">
-      <div class="container reveal">
-        <div class="reveal" style="display:flex;align-items:center;justify-content:space-between;gap:3rem;flex-wrap:wrap;">
-          <div style="max-width:480px;">
-            <span class="section-eyebrow">Vous souhaitez visiter ?</span>
-            <h2 style="margin-bottom:1rem;">Venez découvrir<br><span style="color:var(--or);">le domaine</span></h2>
-            <p style="color:var(--text-muted);font-weight:300;line-height:1.7;">Contactez-nous pour organiser une visite ou un événement dans ce cadre unique.</p>
-          </div>
-          <a href="contact.html" class="btn btn-primary btn-lg" style="flex-shrink:0;">Nous contacter</a>
-        </div>
+        <a href="contact.html" class="btn btn-primary btn-lg bottom-cta-action">Nous contacter</a>
       </div>
     </section>
   </main>
@@ -219,6 +173,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js?v=20260725-songhai"></script>
 </body>
 </html>
