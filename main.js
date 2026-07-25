@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
     "Surface": "Area",
     "Lieu": "Location",
     "Mission": "Mission",
-    "Autonomie": "Self-reliance",
     "Le Vauclin · Martinique": "Le Vauclin · Martinique",
     "Un Site": "A Remarkable",
     "Remarquable": "Site",
